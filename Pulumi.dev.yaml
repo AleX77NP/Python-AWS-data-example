@@ -1,0 +1,18 @@
+config:
+  aws-data-training:dynamodb:
+    billingMode: PROVISIONED
+    hashKey: PlayerName
+    rangeKey: Goals
+    readCapacity: 2
+    tableName: Records
+    ttlEnabled: false
+    writeCapacity: 2
+  aws-data-training:environment: DEV
+  aws-data-training:masterPassword:
+    secure: AAABAND1QOa3/YSoExE7sYYwo40P/m21eCx8QPw9H2MALgVpypbSuN8IV8ujgKnPOFt3MWBF
+  aws-data-training:redshift:
+    clusterIdentifier: records-cluster
+    clusterType: single-node
+    masterUsername: imal
+    nodeType: ra3.xlplus
+  aws:region: us-east-1

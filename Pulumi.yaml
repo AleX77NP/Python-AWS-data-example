@@ -1,0 +1,3 @@
+name: aws-data-training
+description: A minimal AWS TypeScript program for Data Engineering training
+runtime: nodejs
